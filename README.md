@@ -3,8 +3,7 @@
 建築設計・パース作成のための、ミニマルで高品質な2D添景（フィギュア）生成ツール。
 
 ### 🖼 Preview
-[<img width="2578" height="1870" alt="CleanShot 2026-05-02 at 11  30 44@2x" src="https://github.com/user-attachments/assets/3e3411a5-4c98-43bf-8ea6-b8bca349f5b0" />
-]
+<img width="2578" height="1870" alt="CleanShot 2026-05-02 at 11  30 44@2x" src="https://github.com/user-attachments/assets/3e3411a5-4c98-43bf-8ea6-b8bca349f5b0" />
 
 ## 📂 ファイル構成
 - `index.html`: アプリケーション本体
