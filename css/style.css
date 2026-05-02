@@ -1,0 +1,182 @@
+:root {
+    --bg: #0D0D0D;
+    --text: #AAAAAA;
+    --accent: #00FFFF;
+    --border: rgba(170, 170, 170, 0.15);
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 260px;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sex-toggle {
+    display: flex;
+    margin-bottom: 40px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.sex-btn {
+    flex: 1;
+    padding: 12px 0;
+    background: transparent;
+    color: #666;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.sex-btn.active {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+.cat-btn {
+    text-align: left;
+    padding: 14px 16px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: #666;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.cat-btn.active {
+    color: var(--accent);
+    background: rgba(0, 255, 255, 0.05);
+}
+
+.main-area {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.grid-area {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    border-right: 1px solid var(--border);
+    scrollbar-width: none;
+}
+
+.grid-area::-webkit-scrollbar {
+    display: none;
+}
+
+.category-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.pose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 24px;
+}
+
+.pose-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pose-card.active {
+    border-color: var(--accent);
+    background: rgba(0, 255, 255, 0.02);
+}
+
+.pose-card svg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.pose-card span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+.preview-area {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.preview-svg-wrapper {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 2/3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    border: 1px solid var(--border);
+}
+
+#main-preview {
+    width: 100%;
+    height: 100%;
+}
+
+.preview-title {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.download-btn {
+    padding: 16px 40px;
+    border: 1px solid rgba(170, 170, 170, 0.3);
+    border-radius: 9999px;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
